@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "build": "webpack --config config/webpack.base.config.js",
+    "start": "webpack-dev-server --hot --inline --config config/webpack.development.config.js",
+    "watch": "webpack -w",
+    "clean": "rimraf /app/dist/*"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "ts-loader": "^5.4.3",
+    "typescript": "^3.4.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@vue/cli": "^4.4.4",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "private": true
+}

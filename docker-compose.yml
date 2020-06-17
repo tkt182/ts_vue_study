@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  ts_study:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm run start
+    #command: npm run clean 
+    #command: npm run build
+    tty: true
+    volumes:
+      #- ./src:/app/src
+      #- ./dist:/app/public
+      - .:/app
+    ports:
+      - "8080:8080"
